@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course page</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loader()">
+    <div class="socket" id="socket">
+        <script src="components/loader.js"></script>
+    </div>
+
+    <div id="hidden" class="hidden animate-opacity">
+        <nav>
+            <script src="components/nav.js"></script>
+        </nav>
+
+        <div class="bg-gradient-to-tr from-yellow-400 to-yellow-500 p-20 text-white">
+            <h4 class="lg:text-3xl text-lg font-extrabold leading-relaxed">Browse Thousands of Our <br><br> Video Tutorials Curated <br><br> Only for you.</h4>
+            <br><br>
+            <p>Access all tutorials and resources when you become a <br> premium member of Semaj Africa.</p>
+        </div>
+
+        <div class="lg:my-20 my-10 mx-5 lg:mx-48">
+            <div class="bg-yellow-500 p-8 rounded-lg text-white shadow-lg">
+                <input oninput="searchCourse()" type="search" id="search" name="search" placeholder="Search for Courses i.e web-development" class="border-b-2 border-solid border-white bg-yellow-500 w-full focus:outline-none placeholder-white">
+                <span></span>
+            </div>
+            <div class="flex">
+                <div class="w-9/12 lg:mx-px md:mx-px mx-auto">
+                    <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-5 gap-2 mt-8 text-gray-500" id="course-container">
+                    </div>
+                </div>
+                <div class="w-2/12 mt-8 ml-8 md:text-lg text-md flex flex-col">
+                    <button class="my-4 text-yellow-500" onclick="retrieveItems()">All</button>
+                    <button class="my-4" id="design" onclick="loadCategory(event, 'design')">Design</button>
+                    <button class="my-4" id="webDev" onclick="loadCategory(event, 'webDev')">Web development</button>
+                    <button class="my-4" id="digital" onclick="loadCategory(event, 'digital')">Digital</button>
+                    <button class="my-4" id="physical" onclick="loadCategory(event, 'physical')">Physical activities</button>
+                    <button class="my-4" id="languages" onclick="loadCategory(event, 'languages')">Languages</button>
+                    <br>
+                    <h2 class="text-gray-700 font-bold my-6">Course type:</h2>
+                    <div class="flex text-xs">
+                        <button id="free" onclick="filterCourseType(true)" class="rounded-full border-2 border-solid border-gray-500 w-14 h-14 hover:bg-yellow-500 hover:border-transparent hover:text-white">free</button>
+                        <button id="premium" onclick="filterCourseType(false)" class="rounded-full border-2 border-solid border-gray-500 w-14 h-14 hover:bg-yellow-500 hover:border-transparent hover:text-white ml-3">premium</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-gray-900 text-white">
+            <script src="components/footer.js"></script>
+        </footer>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+<script src="firebase-config.js"></script>
+<script src="main.js"></script>
+<script src="course.js"></script>
+<script src="CSSclasses.js"></script>
+</html>

@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-moz-selection { /* Code for Firefox */
+    color: #FFF7DF;
+    background:#FF8A00;
+}
+::selection {
+    color: #FFF7DF;
+    background:#FF8A00;
+}
+
+::-webkit-scrollbar {
+    width: 18px;
+}
+
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #FFF7DF;
+}
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #FF8A00;
+    border-radius: 18px;
+}
+
+.animate-zoom {animation:animatezoom 0.3s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}

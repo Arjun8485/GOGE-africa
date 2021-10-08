@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loader()">
+    <div class="socket" id="socket">
+        <script src="components/loader.js"></script>
+    </div>
+
+    <div id="hidden" class="hidden animate-opacity">
+        <nav>
+            <script src="components/nav.js"></script>
+        </nav>
+
+        <div id="blog-list-page">
+            <div class="lg:my-32 mt-20 lg:ml-56 mx-auto w-5/6">
+                <h3 class="lg:text-left font-extrabold">
+                    Welcome to our
+                    <br>
+                    Forever Updated
+                    <br>
+                    Blog Post!
+                </h3>
+                <br>
+                <p>Be informed! Never miss a single post</p>
+            </div>
+
+            <div class="mx-auto w-5/12 text-white" id="blog-list-container">
+                <div class="w-full rounded-xl m-5" data-id="13579">
+                    <img src="images/Image Placeholder3.png" alt="" class="rounded-t-3xl h-80 w-full">
+                    <div class="h-96 bg-gradient-to-tr from-yellow-400 to-yellow-500 p-10 rounded-b-xl">
+                        <h4 class="font-bold text-3xl">
+                            The hate you give is the hate you’ll eventually get
+                        </h4>
+                        <br>
+                        <p class="font-normal">19 Augs, 2019 - by Tommy Lang</p>
+                        <br><br>
+                        <p>Lorem ipsum dolor sit amet, magna habemus ius ad, qui minimum voluptaria in. Ad mei modus quodsi complectitur</p>
+                        <br>
+                        <button class="text-yellow-500 bg-white rounded-full py-3 px-12 text-lg hover:opacity-80" onclick="showBlog('13579')">Read more</button>
+                    </div>        
+                </div>
+
+                <div class="w-full rounded-xl m-5">
+                    <img src="images/Image Placeholder3.png" alt="" class="rounded-t-3xl h-80 w-full">
+                    <div class="h-96 bg-gradient-to-tr from-yellow-400 to-yellow-500 p-10 rounded-b-xl">
+                        <h4 class="font-bold text-3xl">
+                            The hate you give is the hate you’ll eventually get
+                        </h4>
+                        <br>
+                        <p class="font-normal">19 Augs, 2019 - by Tommy Lang</p>
+                        <br><br>
+                        <p>Lorem ipsum dolor sit amet, magna habemus ius ad, qui minimum voluptaria in. Ad mei modus quodsi complectitur</p>
+                        <br>
+                        <button class="text-yellow-500 bg-white rounded-full py-3 px-12 text-lg hover:opacity-80" onclick="showBlog(this)">Read more</button>
+                    </div>        
+                </div>
+                
+                <div class="w-full rounded-xl m-5">
+                    <img src="images/Image Placeholder3.png" alt="" class="rounded-t-3xl h-80 w-full">
+                    <div class="h-96 bg-gradient-to-tr from-yellow-400 to-yellow-500 p-10 rounded-b-xl">
+                        <h4 class="font-bold text-3xl">
+                            The hate you give is the hate you’ll eventually get
+                        </h4>
+                        <br>
+                        <p class="font-normal">19 Augs, 2019 - by Tommy Lang</p>
+                        <br><br>
+                        <p>Lorem ipsum dolor sit amet, magna habemus ius ad, qui minimum voluptaria in. Ad mei modus quodsi complectitur</p>
+                        <br>
+                        <button class="text-yellow-500 bg-white rounded-full py-3 px-12 text-lg hover:opacity-80" onclick="showBlog(this)">Read more</button>
+                    </div>        
+                </div>
+            </div>
+        </div>
+
+        <div class="mx-auto xl:w-5/12 lg:w-6/20 md:w-7/12 sm:w-8/12 w-10/12 my-10" id="blog-container">
+            <div class="hidden" id="96FgcQzNYQhASMKxJY2P">
+                <h3 class="font-bold text-3xl text-yellow-500 text-center">Tech Careers You Can Do Remotely in 2021</h3>
+                <br>
+                <p class="text-right italic">- by Kelli Smith</p>
+                <br><br>
+                <p class="font-light">Remote work has been growing in popularity for years, but in 2020 in the midst of a pandemic, the appeal and necessity of remote career options has ballooned. If you’re looking to continue working from home (whether your community is currently under lockdown or not) a coding job from home might be pretty appealing right now.
+                <br><br>
+                And it’s not just about the current moment. If you love to figure out and fix a dilemma or obstacle, then a coding career is likely your dream. If you want to create digital work that’s unique and appealing, a creative tech career can be for you, even in the long run. And the best thing about both? Most tech careers can be done remotely from anywhere in the world.
+                <br><br>
+                But what remote tech jobs are you qualified for? What jobs can you get if you learn to code? And is it really possible for you to make a career change into a design or coding career?
+                <br><br>
+                
+                Here’s the thing about tech: if you’re creative or a problem solver by nature, and you’re willing to put in the work of learning digital skills and becoming a part of the community, then a tech career is within reach for you.
+                <br><br>
+                
+                📌 Related Post: Am I too old to learn to code at 40? (Nope, and here’s why.)(opens in a new tab)
+                <br><br>
+                
+                Whether you want to build amazing websites for companies or clients, design gorgeous graphics that customers will never forget, or market the heck out of a product or service you love, you can do these jobs remotely with just a device and a decent internet connection. So you don’t have to move to San Francisco for an awesome career in tech. You can stay right where you are.
+                <br><br>
+                
+                Check out the descriptions below for job details, average salaries, and actual remote positions open now (plus the courses that will teach you the skills you need) for these 10 amazing tech-focused careers—that you can do wherever is best for you.</p>
+                <button onclick="hideBlog('96FgcQzNYQhASMKxJY2P')" class="fixed bottom-0 right-0 text-white bg-yellow-500 py-3 px-6 rounded-tl-xl">Head back ← </button>
+                <br><br><br>
+                <div>
+                    <h2 class="text-gray-600 font-bold text-3xl">
+                        4 Comments
+                    </h2>
+                    <br>
+                    <div class="border-2 border-solid border-gray-400 rounded-lg lg:p-8 p-4 flex flex-col divide-y-2 divide-solid divide-gray-300" id="comment-section">
+                        <div class="">
+                            <br>
+                            <div class="bg-gray-400 rounded-full lg:w-20 lg:h-20 w-10 h-10 float-left mr-3 mb-3"></div>
+                            <p class="italic">“With your budget in mind, it is easy to plan a chartered yacht vacation. Companies often have a fleet of sailing vessels that can accommodate parties of various sizes.” <br> <br><span>-by Arjun </span></p>
+                            <br>
+                        </div>
+                    </div>
+                    <br><br><br><br>
+                    <h2 class="text-gray-600 font-bold text-3xl">Leave a Comment</h2>
+                    <br>
+                    <p>Your email address will not be published. Required fields are marked *</p>
+                    <br><br>
+                    <div>
+                        <div class="flex justify-between">
+                            <input required type="text" id="name" placeholder="Name" class="w-5/12 bg-yellow-100 py-3 px-4 rounded-3xl text-sm focus:outline-none">
+                            <input  type="text" id="email" placeholder="Email" class="w-5/12 bg-yellow-100 py-3 px-4 rounded-3xl text-sm focus:outline-none">
+                        </div>
+                        <br>
+                        <textarea required id="comment" style="resize: none;" placeholder="Your Comment" class="bg-yellow-100 w-full py-3 px-4 rounded-3xl text-sm focus:outline-none h-40">
+                        </textarea>
+                        <br><br>
+                        <button onclick="postComment()" id="submit" class="nav-button-bg focus:outline-none px-12 py-3 text-white rounded-full hover:opacity-80">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-gray-900 text-white">
+            <script src="components/footer.js"></script>
+        </footer>
+    </div>
+</body>
+<script src="main.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+<script src="firebase-config.js"></script>
+<script src="blogs.js"></script>
+<script src="comment.js"></script>
+<script src="CSSclasses.js"></script>
+<script>
+</script>
+</html>

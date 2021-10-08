@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <title>Landing</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loader()">
+    <div class="socket" id="socket">
+        <script src="components/loader.js"></script>
+    </div>
+
+    <div id="hidden" class="hidden animate-opacity">
+        <nav>
+            <script src="components/nav.js"></script>
+        </nav>
+
+        <div class="flex lg:flex-row flex-col" style="background: linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%);">
+
+            <div class="lg:w-6/12 w-full lg:py-28 lg:px-28 p-10 lg:text-4xl text-2xl">
+                <h1 class="text-white font-bold leading-relaxed" style="color: #FFF7DF;">Get Access to Unlimited Educational Resources. Everywhere, Everytime!</h1>
+                <p class="py-8 text-white text-sm font-light">premium access to more than 10,000 resources ranging from courses, events e.c. </p>
+                <button class="text-yellow-500 bg-white rounded-full py-4 px-14 text-lg hover:opacity-80">Get Access</button>
+            </div>
+
+            <div class="lg:w-6/12 w-full">
+                <img src="images/Isolated Image Icon.png" alt="" class="w-80 h-64">
+            </div>
+
+        </div>
+
+
+        <div class="bg-yellow-50 lg:pt-20 pt-10">
+
+            <div class="flex lg:flex-row flex-col lg:justify-between justify-center lg:mx-40 mx-4">
+                <div class="lg:w-3/12 lg:mx-0 mx-4 lg:my-0 my-8">
+                    <img src="images/unlimited_acess.png" alt="" class="mx-auto h-24">
+                    <br>
+                    <h3 class="text-xl font-extrabold text-center text-gray-600">Unlimited Access</h3>
+                    <br>
+                    <p class="text-center text-gray-500">One subscription unlimited access</p>
+                </div>
+
+                <div class="lg:w-3/12 lg:mx-0 mx-4 lg:my-0 my-8">
+                    <img src="images/expert_teachers.png" alt="" class="mx-auto h-24">
+                    <br>
+                    <h3 class="text-xl font-extrabold text-center text-gray-600">Expert teachers</h3>
+                    <br>
+                    <p class="text-center text-gray-500">Learn from industry experts who are passionate about teaching</p>
+                </div>
+
+                <div class="lg:w-3/12 lg:mx-0 mx-4 lg:my-0 my-8">
+                    <img src="images/learn_anywhere.png" alt="" class="mx-auto h-24">
+                    <br>
+                    <h3 class="text-xl font-extrabold text-center text-gray-600">Learn anywhere</h3>
+                    <br>
+                    <p class="text-center text-gray-500">Switch between your computer, tablet, or mobile device.</p>
+                </div>
+
+            </div>
+
+
+            <div class="flex lg:mt-20 mt-10">
+                <div class="w-7/12 lg:block hidden">
+                    <img src="images/about-us_element2.png" alt="">
+                </div>
+                <div class="lg:w-5/12 lg:mt-32 lg:ml-32 lg:mr-32 p-10">
+                    <h3 class="lg:text-5xl text-4xl text-yellow-500 leading-relaxed">
+                        Learn A Skill.
+                        <br>
+                        Build Your Portfolio.
+                        <br>
+                        <span class="font-extrabold">Get Hired!</span>
+                    </h3>
+                    <br>
+                    <br>
+                    <p class="font-light">
+                        Semaj Africa is an online education platform that delivers video courses, programs and resources for Individual, Advertising & Media Specialist, Online Marketing Professionals, Freelancers and anyone looking to pursue a career in digital marketing, Accounting, Web development, Programming. Multimedia and CAD design.
+                    </p>
+                    <br><br>
+                    <button class="nav-button-bg focus:outline-none px-12 py-4 text-white rounded-full hover:opacity-80">Discover</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex" style="background: linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)">
+            <div class="lg:w-5/12 w-full lg:m-40 m-10">
+                <h3 class="lg:text-5xl text-3xl text-white font-bold">Success Stories <br> From Our Students <br> WorldWide!</h3>
+                <br><br>
+                <p class="text-white font-light">
+                    Semaj Africa is an online education platform that delivers video courses, programs and resources for Individual, Advertising & Media Specialist, Online Marketing Professionals, Freelancers and anyone looking to pursue a career in digital marketing, Accounting, Web development, Programming. Multimedia and CAD design.
+                </p>
+                <br><br>
+                <button class="text-yellow-500 bg-white rounded-full py-4 px-14 text-lg hover:opacity-80">Discover</button>
+            </div>
+            <div class="lg:w-7/12 w-full lg:block hidden">
+                <img src="images/Media Placeholders.png" alt="">
+            </div>
+        </div>
+
+        <div class="lg:mt-20 m-10">
+            <h2 class="text-center text-yellow-400 text-4xl font-bold">Courses</h2>
+            <br><br>
+            <div class="flex lg:w-7/12 mx-auto lg:justify-around flex-wrap justify-around">
+                <button onclick="retrieveItems()" class="m-2">All</button>
+                <button onclick="loadCategory(event, 'design')" class="m-2 btn">Design</button>
+                <button onclick="loadCategory(event, 'webDev')" class="m-2 btn">Web development</button>
+                <button onclick="loadCategory(event, 'digital')" class="m-2 btn">Digital</button>
+                <button onclick="loadCategory(event, 'physical')" class="m-2 btn">Physical activities</button>
+                <button onclick="loadCategory(event, 'languages')" class="m-2 btn">Languages</button>
+            </div>
+            <div class="grid lg:grid-cols-4 sm:grid-cols-3 grid-cols-1 lg:gap-5 gap-2 lg:mx-6 md: mx-2 mt-8 text-gray-500" id="course-container">
+
+            </div>
+
+            <div class="flex justify-center">
+                <button class="nav-button-bg focus:outline-none px-12 py-4 my-10 text-white rounded-full hover:opacity-80 ml-4">Discover</button>
+            </div>
+        </div>
+        
+        <div id="achievement">
+            <script src="components/achievement.js"></script>
+        </div>
+
+        <div>
+            <div class="text-center lg:mt-28 lg:mx-auto m-10 lg:w-3/6">
+                <h2 class="text-center text-yellow-400 text-4xl font-bold">What Students say</h2>
+                <br></br>
+                <p>Semaj Africa is an online education platform that delivers video courses, programs and resources for Individual, Advertising & Media Specialist,.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-4 grid-cols-1 gap-2 justify-between">
+                <div class="p-10 border-gray-200 lg:m-0 m-4 border-2 rounded-md lg:opacity-30 opacity-100 hover:opacity-100 hover:shadow-lg">
+                    <img src="images/“.svg" alt="">
+                    <br>
+                    <p>
+                        Semaj Africa is an online education platform that delivers video courses, programs and resources for Individual, Advertising & Media Specialist, Online Marketing Professionals, Freelancers and anyone.
+                    </p>
+                    <br><br>
+                    <div class="flex">
+                        <div class="w-14 h-14 bg-gray-400 rounded-full"></div>
+                        <div class="flex flex-col ml-4">
+                            <h3 class="text-gray-500 font-bold text-xl">Arthur Brooklyn</h3>
+                            <p>Categories: 3d Modelling</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-10 border-gray-200 lg:m-0 m-4 border-2 rounded-md lg:opacity-30 opacity-100 hover:opacity-100 hover:shadow-lg">
+                    <img src="images/“.svg" alt="">
+                    <br>
+                    <p>
+                        Semaj Africa is an online education platform that delivers video courses, programs and resources for Individual, Advertising & Media Specialist, Online Marketing Professionals, Freelancers and anyone.
+                    </p>
+                    <br><br>
+                    <div class="flex">
+                        <div class="w-14 h-14 bg-gray-400 rounded-full"></div>
+                        <div class="flex flex-col ml-4">
+                            <h3 class="text-gray-500 font-bold text-xl">Arthur Brooklyn</h3>
+                            <p>Categories: 3d Modelling</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-10 border-gray-200 lg:m-0 m-4 border-2 rounded-md lg:opacity-30 opacity-100 hover:opacity-100 hover:shadow-lg">
+                    <img src="images/“.svg" alt="">
+                    <br>
+                    <p>
+                        Semaj Africa is an online education platform that delivers video courses, programs and resources for Individual, Advertising & Media Specialist, Online Marketing Professionals, Freelancers and anyone.
+                    </p>
+                    <br><br>
+                    <div class="flex">
+                        <div class="w-14 h-14 bg-gray-400 rounded-full"></div>
+                        <div class="flex flex-col ml-4">
+                            <h3 class="text-gray-500 font-bold text-xl">Arthur Brooklyn</h3>
+                            <p>Categories: 3d Modelling</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-10 border-gray-200 lg:m-0 m-4 border-2 rounded-md lg:opacity-30 opacity-100 hover:opacity-100 hover:shadow-lg">
+                    <img src="images/“.svg" alt="">
+                    <br>
+                    <p>
+                        Semaj Africa is an online education platform that delivers video courses, programs and resources for Individual, Advertising & Media Specialist, Online Marketing Professionals, Freelancers and anyone.
+                    </p>
+                    <br><br>
+                    <div class="flex">
+                        <div class="w-14 h-14 bg-gray-400 rounded-full"></div>
+                        <div class="flex flex-col ml-4">
+                            <h3 class="text-gray-500 font-bold text-xl">Arthur Brooklyn</h3>
+                            <p>Categories: 3d Modelling</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex lg:mt-40 lg:flex-row flex-col">
+            <div class="lg:w-3/6 lg:p-28 m-10">
+                <h2 class="text-yellow-400 text-4xl font-bold w-full">Our <br> Pricing plans</h2>
+                <br><br>
+                <p>Semaj Africa is an online education platform that delivers video courses, programs and resources for</p>
+                <button class="nav-button-bg focus:outline-none px-12 py-4 mt-10 text-white rounded-full hover:opacity-80">Start free trial</button>
+            </div>
+            <div class="lg:w-3/6 flex lg:flex-row flex-col justify-center mx-auto">
+                <img src="images/pricing_card-1.png" alt="" style="width: 273px; height: 504px;">
+                <img src="images/pricing_Card_2.png" alt="" style="width: 273px; height: 504px;" class="lg:ml-8 mt-8">
+            </div>
+        </div>
+
+        <div class="flex lg:flex-row flex-col lg:mx-40 lg:mt-40">
+            <div class="p-10">
+                <h3 class="text-3xl font-bold" style="color:#FF8A00;">
+                    Subscribe to
+                    <br>
+                    Our Newsletter
+                </h3>
+                <br>
+                <p>
+                    Get exclusive discounts and latest news deliverd to your inbox for free!
+                </p>
+            </div>
+            <div class="flex w-full">
+                <input type="text" placeholder="Search" class="py-4 px-6 focus:outline-none ml-10 mt-10 w-8/12 rounded-full h-14" style="background: #FFFFFF;border: 1px solid #EFEFEF;box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);">
+                <button class="nav-button-bg focus:outline-none px-12 py-4 mt-10 text-white rounded-full hover:opacity-80 -ml-20 h-14">Submit</button>
+            </div>
+        </div>
+
+        <div class="flex mt-10" style="background-color:#FFF7DF;">
+
+            <div class="w-7/12 lg:block hidden -ml-60">
+                <img src="images/about-us_element2.png" alt="">
+            </div>
+
+            <div class="my-auto lg:mx-auto lg:w-5/12 m-10">
+                <br>
+                <h2 class="text-yellow-400 lg:text-4xl text-3xl font-bold">Let’s Build <br> Something <br> Great Together</h2>
+                <br><br>
+                <p class="text-sm font-light">
+                    Semaj Africa is an online education platform that delivers video courses, programs and resources for Individual, Advertising & Media Specialist, Online Marketing Professionals, Freelancers and anyone looking to pursue a career in digital marketing, Accounting, Web development, Programming. Multimedia and CAD design.
+                </p>
+                <br><br>
+                <button class="nav-button-bg focus:outline-none px-12 py-4 text-white rounded-full hover:opacity-80 mb-20">Let’s Talk!</button>
+            </div>
+        </div>
+
+        <footer class="bg-gray-900 text-white">
+            <script src="components/footer.js"></script>
+        </footer>
+    </div>
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+<script src="firebase-config.js"></script>
+<script src="main.js"></script>
+<script src="course.js"></script>
+</html>
